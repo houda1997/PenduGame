@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp_v2_fxmal.LoginController">
+   <children>
+      <AnchorPane id="back" fx:id="panel" prefHeight="316.0" prefWidth="546.0" stylesheets="tp_v2_fxmal/Style.css" StackPane.alignment="TOP_LEFT">
+         <children>
+            <TextField fx:id="text" layoutY="53.0" prefHeight="32.0" prefWidth="485.0" />
+            <Label layoutY="5.0" prefHeight="25.0" prefWidth="573.0" text="Pseudo" textFill="#479a10">
+               <font>
+                  <Font name="Century Gothic" size="38.0" />
+               </font>
+            </Label>
+            <Button fx:id="inscription" layoutX="123.0" layoutY="194.0" mnemonicParsing="false" onAction="#loginInscrip" prefHeight="25.0" prefWidth="253.0" text="Inscription">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5222222222222223" centerY="0.5" radius="0.5697674418604651">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#ae1d1d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="entrer" layoutX="125.0" layoutY="146.0" mnemonicParsing="false" onAction="#loginEntrer" prefHeight="39.0" prefWidth="249.0" text="Entrer">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5222222222222223" centerY="0.5" radius="0.5697674418604651">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#ae1d1d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Label fx:id="label2" layoutY="78.0" prefHeight="39.0" prefWidth="573.0" text="Veuillez vous inscrire avant" textFill="#d93421" visible="false">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" layoutX="5.0" layoutY="78.0" prefHeight="39.0" prefWidth="573.0" text="Veuillez introduire un Pseudo valide" textFill="#d93421" visible="false">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" layoutX="5.0" layoutY="78.0" prefHeight="39.0" prefWidth="573.0" text="Veuillez introduire un autre Pseudo" textFill="#d93421" visible="false">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

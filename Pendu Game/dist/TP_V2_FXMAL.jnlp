@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TP_V2_FXMAL.jnlp">
+  <information>
+    <title>TP_V2_FXMAL</title>
+    <vendor>TOSHIBA</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TP_V2_FXMAL.jar" size="269989" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TP_V2_FXMAL" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="tp_v2_fxmal.TP_V2_FXMAL"  name="TP_V2_FXMAL" />
+  <update check="always"/>
+</jnlp>
